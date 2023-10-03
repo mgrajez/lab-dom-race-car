@@ -14,8 +14,11 @@ body {
   justify-content: center;
 }
 
-#game-screen {
+.hidden {
   display: none;
+}
+
+#game-screen {
   align-content: center;
   padding: 20px 0px;
   overflow: hidden;
@@ -27,18 +30,12 @@ body {
 
 @keyframes slide {
   0% {
-    background-position: 0 -1000px;
+    background-position: 0 -600px;
   }
-  95% {
-    background-position: 0 0;
-  }
-  100% {
-    background-position: 0 50px;
-  }
-}
 
-#game-end {
-  display: none;
+  100% {
+    background-position: 0 100px;
+  }
 }
 
 .game-intro p {
